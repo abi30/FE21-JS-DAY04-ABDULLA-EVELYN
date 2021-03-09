@@ -5,13 +5,14 @@ function submitData() {
     // var last_name = document.forms["output"]["last_name"].value;
     var last_name=document.getElementById("last_name").value;
 
-
+   
+     var select = document.getElementById("select").value;
     // var age=document.forms["output"]["age"].value;
     var age=document.getElementById("age").value;
 
 /*you must convert the variables into numbers, otherwise the + operator will concatenate them as strings*/
     var age=Number(age);
-    var output =`${first_name} ${last_name}'s age is ${age}.`;
+    var output =`${first_name} ${last_name}'s age is ${age} and he/she is working in ${select}.`;
 
 
     var container = document.getElementById('container');
@@ -20,3 +21,9 @@ function submitData() {
 }
 
 document.getElementById("submit").addEventListener("click",submitData);
+
+
+
+
+
+// '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
