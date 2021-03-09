@@ -1,5 +1,12 @@
 document.getElementById("container").addEventListener("mouseover", ()=>{
-    document.getElementById("para").innerHTML="You are inside the circle";
+
+    var my_event= document.getElementById("para");
+    my_event.innerHTML="You are inside the circle";
+    my_event.style.textAlign="center";
+    my_event.style.marginTop="9rem";
+    my_event.style.color="#fff";
+    my_event.style.fontSize="24px";
+
 });
 
 document.getElementById("container").addEventListener("mouseout", ()=>{
