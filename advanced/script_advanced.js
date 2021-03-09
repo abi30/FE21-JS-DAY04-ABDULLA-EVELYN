@@ -1,7 +1,15 @@
-container.addEventListener("mouseover", "")
+document.getElementById("container").addEventListener("mouseover", ()=>{
+    document.getElementById("para").innerHTML="You are inside the circle";
+});
 
-container.addEventListener("mouseout", )
+document.getElementById("container").addEventListener("mouseout", ()=>{
+    document.getElementById("para").innerHTML="You are outside the circle";
+});
 
-container.addEventListener("click", )
+document.getElementById("container").addEventListener("click", ()=>{
+    document.getElementById("container").style.backgroundColor="gray";
+});
 
-container.addEventListener("dblclick", )
+document.getElementById("container").addEventListener("dblclick", ()=>{
+    document.getElementById("container").style.backgroundColor="blue";
+});
